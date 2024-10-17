@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>登录注册</title>  
+    <link rel="stylesheet" href="log.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <h1 id="form-title">登录</h1>  
+        <div class="date" id="form-container">  
+            <form id="login-form" action="#">  
+                <div class="form-container">  
+                    <input type="text" class="form-control" name="username" id="username" placeholder="用户名" required>  
+                    <br><br>  
+                    <input type="password" class="form-control" name="password" id="password" placeholder="密码" required>  
+                    <br><br>  
+                </div>  
+                <div class="form-container" style="margin-top: 20px; font-size: 14px;">  
+                    <input type="checkbox" required>  
+                    <span class="check-box">记住密码</span>  
+                    <br><br>  
+                </div>  
+                <div class="form-container">  
+                    <input type="submit" class="form-control log-btn" value="登录">  
+                </div>  
+                <div class="sign-up">  
+                    <p>没有账户？</p>  
+                    <br>  
+                    <a href="#" id="register-link">立即注册</a>  
+                </div>  
+            </form>  
+            <form id="register-form" action="#" style="display: none;">  
+                <div class="form-container">  
+                    <input type="text" class="form-control" name="register-username" id="register-username" placeholder="用户名" required>  
+                    <br><br>  
+                    <input type="password" class="form-control" name="register-password" id="register-password" placeholder="密码" required>  
+                    <br><br>  
+                    <input type="password" class="form-control" name="confirm-password" id="confirm-password" placeholder="确认密码" required>  
+                    <br><br>  
+                </div>  
+                <div class="form-container">  
+                    <input type="submit" class="form-control log-btn" value="注册">  
+                </div>  
+                <div class="sign-up">  
+                    <p>已有账户？</p>  
+                    <br>  
+                    <a href="#" id="login-link">返回登录</a>  
+                </div>  
+            </form>  
+        </div>  
+    </div>  
+  
+    <script src="log.js"></script>  
+</body>  
+</html>
