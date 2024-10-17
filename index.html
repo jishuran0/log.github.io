@@ -4,7 +4,66 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>登录注册</title>  
-    <link rel="stylesheet" href="log.css">  
+    <style>
+        *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+        }
+            body{
+                background:#cde8fa9c;
+            }
+            .container{
+                width: 400px;
+                height: 500px;
+                background-color: #fcfeff9c;
+                margin: 10% auto;
+                color:#2d3436;
+                border-radius: 15px;
+                padding: 60px;
+            }
+            .container h1{
+                text-align:center;
+                margin: 10px 0;
+                color:#01c8f5ce;
+            }
+            .container form{
+                margin-top:35px;
+            }
+            .container .form-container{
+                margin-bottom:10px;
+                width: 100%;
+            }
+            .container .form-container .form-control{
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid #ccc;
+                outline: none;
+                padding: 5px;
+                width: 100%;
+            }
+            .container .form-container .log-btn{
+                padding: 10px 20px;
+                border: 0;
+                border-radius: 5px;
+                background-color: #0df7e0ce;
+                color: white;
+                font-size: 15px;
+                letter-spacing: 0.5ps;
+            }
+            .sign-up a{
+                font-size: 17px;
+                display: inline-block;
+                color:#54a0ff;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            #register-form{
+                display: none;
+            }
+    </style>  
 </head>  
 <body>  
     <div class="container">  
@@ -51,7 +110,28 @@
             </form>  
         </div>  
     </div>  
-  
-    <script src="log.js"></script>  
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {  
+        const registerLink = document.getElementById('register-link');  
+        const loginLink = document.getElementById('login-link');  
+        const loginForm = document.getElementById('login-form');  
+        const registerForm = document.getElementById('register-form');  
+        const formTitle = document.getElementById('form-title');  
+      
+        registerLink.addEventListener('click', function(event) {  
+            event.preventDefault();  
+            loginForm.style.display = 'none';  
+            registerForm.style.display = 'block';  
+            formTitle.textContent = '注册';  
+        });  
+      
+        loginLink.addEventListener('click', function(event) {  
+            event.preventDefault();  
+            registerForm.style.display = 'none';  
+            loginForm.style.display = 'block';  
+            formTitle.textContent = '登录';  
+        });  
+    });
+      </script>
 </body>  
 </html>
