@@ -93,17 +93,15 @@ body{
     text-decoration: none;
     transition: color 0.3s;
 }
-.remember-forget a {
-    color: #3d5245;
+.remember-forget a,
+.acc a{
+    color: rgba(13, 114, 145, 0.756);
+    font-weight: 500;
 }
 .acc{
     font-size: 14px;
     color: #3d5245;
     margin-top: 15px;
-}
-.acc a{
-    color: rgba(13, 114, 145, 0.756);
-    font-weight: 500;
 }
 .remember-forget a:hover,
 .acc a:hover{
