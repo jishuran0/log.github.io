@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忘记密码</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form action="#" class="wrapper" id="resetPasswordForm">
+            <h2>重置密码</h2>
+            <input type="text" placeholder="请输入手机号" id="resetPhoneInput">
+            <div class="verification-code-row" id="verificationCodeRow">
+                <input type="text" placeholder="验证码" id="verificationCodeInput">
+                <button class="get-verification-code" id="getVerificationCodeButton"><span>获取</span><br><span>验证码</span></button>
+            </div>
+            <input type="password" placeholder="新密码" id="newPasswordInput">
+            <input type="password" placeholder="请再次输入新密码" id="confirmNewPasswordInput">
+            <button type="submit" id="resetPasswordSubmitButton">确认</button>
+            <div class="acc">
+                <span>已有账号？</span><a href="index.html">立即登录</a>
+            </div>
+        </form>
+    </div>
+    <script src="sc.js"></script>
+</body>
+</html>
