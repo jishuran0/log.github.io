@@ -8,22 +8,24 @@
 </head>
 <body>
     <div>
-        <form action="#" class="wrapper">
+        <form action="#" class="wrapper" id="registerForm">
             <h2>注册</h2>
-            <input type="text" placeholder="用户名" required>
-            <input type="email" placeholder="邮箱" required>
-            <input type="password" placeholder="密码" required>
+            <input type="tel" placeholder="手机号" required id="registerPhoneInput">
+            <input type="email" placeholder="邮箱" required id="registerEmailInput">
+            <input type="password" placeholder="请输入8位含数字和字母密码" required id="registerPasswordInput">
+            <input type="password" placeholder="再次输入密码" required id="confirmPasswordInput">
             <div class="tip">
                 <label for="agree-terms">
                     <input type="checkbox" id="agree-terms" style="height: auto;">
                     <a href="#">我同意所有条款</a>
                 </label>
             </div>
-            <button type="submit">注册</button>
+            <button type="submit" style="margin-top: 5px;">注册</button>
             <div class="acc">
                 <span>已有账号？</span><a href="index.html">立即登录</a>
             </div>
         </form>
     </div>
+    <script src="sc.js"></script>
 </body>
 </html>
