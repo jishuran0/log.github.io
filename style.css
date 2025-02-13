@@ -126,6 +126,7 @@ body{
     color: rgba(13, 114, 145, 0.9);
     text-decoration: underline;
 }
+
 .verification-code-row{
     display: flex;
 }
@@ -136,4 +137,20 @@ body{
     padding: 1px;
     margin: 6px 1px;
     font-size: 12px;
+}
+
+#toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e1f5fe; 
+    color: #01579b;
+    padding: 15px 30px;
+    border-radius: 8px; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px; 
 }
